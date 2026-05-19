@@ -1,0 +1,13 @@
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/api/create-preference"
+  to = "/.netlify/functions/create-preference"
+  status = 200
+
+[[redirects]]
+  from = "/api/mp-webhook"
+  to = "/.netlify/functions/mp-webhook"
+  status = 200
